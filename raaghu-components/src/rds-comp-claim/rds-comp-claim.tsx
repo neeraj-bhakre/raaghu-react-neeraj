@@ -1,7 +1,7 @@
 import { id } from "date-fns/locale";
 import { AnyArray } from "immer/dist/internal";
 import React, { useState, useEffect, Children, useReducer } from "react";
-import { RdsAccordion, RdsButton } from "raaghu-react-elements";
+import { RdsAccordion } from "raaghu-react-elements";
 import "./rds-comp-claim.scss";
 
 export interface RdsCompClaimProps {
@@ -147,7 +147,7 @@ const RdsCompClaim = (props: RdsCompClaimProps) => {
             return (
               <div key={i}>
                 <>
-                  <h6 className="mt-4">{resource.displayName}</h6> 
+                  <h6 className="mt-4">{resource.displayName}</h6>
                   <hr />
                   <div className="mt-2">
                     {" "}
@@ -164,7 +164,7 @@ const RdsCompClaim = (props: RdsCompClaimProps) => {
                     </label>
                   </div>
 
-                  <div className="accbodycheck mt-3 row">
+                  <div className="accbodycheck mt-3">
                     {resource.children.map((check: any, idd: number) => (
                       <div key={idd} className="col-md-4">
                         <input
@@ -192,48 +192,25 @@ const RdsCompClaim = (props: RdsCompClaimProps) => {
           })}
         </div>
         <br />
-        <div className="mt-3 d-flex footer-buttons">
-        {/* <button
+        <div className="buttongrp">
+          <div>
+            <button
               className="btn buttonname btn-outline-primary me-3"
               onClick={() => props.onCancel(Res)}
             >
               Cancel
             </button>
+          </div>
+          <div>
             <button
               className="btn buttonname btn-primary"
               onClick={() => props.onCreate(Res)}
             >
               Create
-            </button> */}
-
-
-            <RdsButton
-							class="me-2"
-							tooltipTitle={""}
-							type={"button"}
-							label={("Cancel") || ""}
-							colorVariant="outline-primary"
-							size="small"
-							databsdismiss="offcanvas"
-              
-						></RdsButton>
-						<RdsButton
-							class="me-2"
-							label={("Save") || ""}
-							size="small"
-							colorVariant="primary"
-							tooltipTitle={""}
-							type={"submit"}
-							databsdismiss="offcanvas"
-              onClick={() => props.onCreate(Res)}
-						></RdsButton>
+            </button>
+          </div>
         </div>
-
       </div>
-
-
-
-      
     </>
   );
 };

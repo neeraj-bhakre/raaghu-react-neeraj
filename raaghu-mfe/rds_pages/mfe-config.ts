@@ -1,95 +1,92 @@
 export const MfeConfig = {
   "host": {
-    "url": "https://abpstagereact.raaghu.io/remoteEntry.js"
+    "url": "http://localhost:8080/remoteEntry.js"
   },
   "edition": {
-    "url": "edition@https://abpstagereact.raaghu.io/rds-page-edition/remoteEntry.js"
+    "url": "edition@http://localhost:8001/remoteEntry.js"
   },
   "dashboard": {
-    "url": "dashboard@https://abpstagereact.raaghu.io/rds-page-dashboard/remoteEntry.js"
+    "url": "dashboard@http://localhost:8002/remoteEntry.js"
   },
   "forgotpassword": {
-    "url": "forgotpassword@https://abpstagereact.raaghu.io/rds-page-forgotpassword/remoteEntry.js"
+    "url": "forgotpassword@http://localhost:8003/remoteEntry.js"
   },
   "login": {
-    "url": "login@https://abpstagereact.raaghu.io/rds-page-login/remoteEntry.js"
+    "url": "login@http://localhost:8004/remoteEntry.js"
   },
   "maintainance": {
-    "url": "maintainance@https://abpstagereact.raaghu.io/rds-page-maintainance/remoteEntry.js"
+    "url": "maintainance@http://localhost:8005/remoteEntry.js"
   },
   "tenant": {
-    "url": "tenant@https://abpstagereact.raaghu.io/rds-page-tenant/remoteEntry.js"
+    "url": "tenant@http://localhost:8006/remoteEntry.js"
   },
   "visualSetting": {
-    "url": "visualSetting@https://abpstagereact.raaghu.io/rds-page-visualSetting/remoteEntry.js"
+    "url": "visualSetting@http://localhost:8007/remoteEntry.js"
   },
   "webhookSubscription": {
-    "url": "webhookSubscription@https://abpstagereact.raaghu.io/rds-page-webhookSubscription/remoteEntry.js"
+    "url": "webhookSubscription@http://localhost:8008/remoteEntry.js"
   },
   "auditLogs": {
-    "url": "auditlogs@https://abpstagereact.raaghu.io/rds-page-auditLogs/remoteEntry.js"
+    "url": "auditlogs@http://localhost:8009/remoteEntry.js"
   },
   "settings": {
-    "url": "settings@https://abpstagereact.raaghu.io/rds-page-settings/remoteEntry.js"
+    "url": "settings@http://localhost:8010/remoteEntry.js"
   },
   "dynamicProperties": {
-    "url": "dynamicProperties@https://abpstagereact.raaghu.io/rds-page-dynamicProperties/remoteEntry.js"
+    "url": "dynamicProperties@http://localhost:8011/remoteEntry.js"
   },
   "roles": {
-    "url": "roles@https://abpstagereact.raaghu.io/rds-page-roles/remoteEntry.js"
+    "url": "roles@http://localhost:8012/remoteEntry.js"
   },
   "organizationUnits": {
-    "url": "organizationUnits@https://abpstagereact.raaghu.io/rds-page-organizationUnits/remoteEntry.js"
+    "url": "organizationUnits@http://localhost:8013/remoteEntry.js"
   },
   "language": {
-    "url": "language@https://abpstagereact.raaghu.io/rds-page-language/remoteEntry.js"
+    "url": "language@http://localhost:8014/remoteEntry.js"
   },
   "users": {
-    "url": "users@https://abpstagereact.raaghu.io/rds-page-users/remoteEntry.js"
+    "url": "users@http://localhost:8015/remoteEntry.js"
   },
   "iconlist": {
-    "url": "iconlist@https://abpstagereact.raaghu.io/rds-page-iconlist/remoteEntry.js"
+    "url": "iconlist@http://localhost:8016/remoteEntry.js"
   },
   "languageText": {
-    "url": "languageText@https://abpstagereact.raaghu.io/rds-page-languageText/remoteEntry.js"
+    "url": "languageText@http://localhost:8017/remoteEntry.js"
   },
   "claimtypes": {
-    "url": "claimtypes@https://abpstagereact.raaghu.io/rds-page-claimtypes/remoteEntry.js"
+    "url": "claimtypes@http://localhost:8035/remoteEntry.js"
   },
   "textTemplate": {
-    "url": "textTemplate@https://abpstagereact.raaghu.io/rds-page-textTemplate/remoteEntry.js"
+    "url": "textTemplate@http://localhost:8020/remoteEntry.js"
   },
   "applications": {
-    "url": "applications@https://abpstagereact.raaghu.io/rds-page-applications/remoteEntry.js"
+    "url": "applications@http://localhost:8025/remoteEntry.js"
   },
   "apiScope": {
-    "url": "apiScope@https://abpstagereact.raaghu.io/rds-page-apiScope/remoteEntry.js"
+    "url": "apiScope@http://localhost:8019/remoteEntry.js"
   },
   "scope": {
     "url": "scope@http://localhost:8099/remoteEntry.js"
   },
   "identityResources": {
-    "url": "identityResources@https://abpstagereact.raaghu.io/rds-page-identityResources/remoteEntry.js"
+    "url": "identityResources@http://localhost:8098/remoteEntry.js"
   },
   "securityLogs": {
-    "url": "securityLogs@https://abpstagereact.raaghu.io/rds-page-securityLogs/remoteEntry.js"
+    "url": "securityLogs@http://localhost:8021/remoteEntry.js"
   },
   "chats": {
-    "url": "chats@https://abpstagereact.raaghu.io/rds-page-chats/remoteEntry.js"
+    "url": "chats@http://localhost:8026/remoteEntry.js"
   },
   "fileManagement": {
-    "url": "fileManagement@https://abpstagereact.raaghu.io/rds-page-fileManagement/remoteEntry.js"
+    "url": "fileManagement@http://localhost:8027/remoteEntry.js"
   },
   "forms": {
-    "url": "forms@https://abpstagereact.raaghu.io/rds-page-forms/remoteEntry.js"
+    "url": "forms@http://localhost:8037/remoteEntry.js"
   },
   "blogger": {
-    "url": "blogger@https://abpstagereact.raaghu.io/rds-page-blogger/remoteEntry.js"
+    "url": "blogger@http://localhost:8028/remoteEntry.js"
   },
   "client": {
-    "url": "client@https://abpstagereact.raaghu.io/rds-page-blogger/remoteEntry.js"
-    },
-    "apiResources": {
-        "url": "apiResources@http://localhost:8030/remoteEntry.js"
-    }
+    "url": "client@http://localhost:8028/remoteEntry.js"
+  }
 }

@@ -11,6 +11,7 @@ import {
 import {
   RdsCompDatatable,
   RdsCompClientResource,
+  RdsCompIdentityClientBasic
 } from "../../../rds-components";
 
 
@@ -283,7 +284,9 @@ const Client = (props: RdsPageScopeProps) => {
           justified={false}
         >
           {activeNavTabId == 0 && (
-          <></>
+          <RdsCompIdentityClientBasic
+          clientData="naemsef"
+          />
           )}
           {activeNavTabId == 1 && (
             <>            

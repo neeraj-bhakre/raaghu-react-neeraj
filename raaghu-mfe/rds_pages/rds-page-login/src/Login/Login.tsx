@@ -42,10 +42,9 @@ const Login: React.FC<LoginProps> = (props: LoginProps) => {
       username: email, // "admin",
       password: password, //"1q2w3E*"
       client_id: "raaghu",
-     scope: "address email phone profile roles BookStore",
+      scope: "address email phone profile roles BookStore", 
     };
- 
-  fetch("https://raaghu-react.azurewebsites.net/connect/token", {
+    fetch("https://raaghu-react.azurewebsites.net/connect/token", {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",

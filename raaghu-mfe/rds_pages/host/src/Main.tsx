@@ -41,8 +41,6 @@ const ClaimTypesCompo = React.lazy(() => import("ClaimTypes/ClaimTypes"));
 const ApplicationsCompo = React.lazy(() => import("Applications/Applications"));
 const TextTemplateCompo = React.lazy(() => import("TextTemplate/TextTemplate"));
 const ApiScopeCompo = React.lazy(() => import("ApiScope/ApiScope"));
-const ApiResourcesCompo = React.lazy(() => import("ApiResources/ApiResources"));
-
 const ScopeCompo = React.lazy(() => import("Scope/Scope"));
 const IdentityResourcesCompo = React.lazy(()=> import("IdentityResources/IdentityResources"));
 const SecurityLogsCompo = React.lazy(() => import("SecurityLogs/SecurityLogs"));
@@ -353,13 +351,6 @@ const Main = (props: MainProps) => {
               path: "/language-text",
               subTitle: t("Manage user interface languages"),
             },
-            {
-              key: "3-5-2",
-              label: t("API Resources"),
-              icon: "languages",
-              path: "/apiResources",
-              subTitle: t("Manage user interface languages"),
-            },
           ],
         },
       ],
@@ -587,7 +578,6 @@ const Main = (props: MainProps) => {
                     />
 
                     <Route path="/api-scope" element={<ApiScopeCompo />} />
-                    <Route path="/apiResources" element={<ApiResourcesCompo />} />
                     <Route path="/chats" element={<ChatsCompo />} />
                     
                     <Route path="/fileManagement" element={<FileManagementCompo />} />
