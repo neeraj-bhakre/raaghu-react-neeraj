@@ -117,7 +117,7 @@ const RdsCompApplicationBasic = (props: RdsCompApplicationBasicProps) => {
 
 	return (
 		<>
-			<div className="pt-4">
+			<div className="pt-3">
 				<form onSubmit={handleSubmit}>
 					<div className="row">
 						<div className="col-12 col-6 col-lg-6 col-md-6 col-xl-6 col-xxl-6">
@@ -148,7 +148,7 @@ const RdsCompApplicationBasic = (props: RdsCompApplicationBasicProps) => {
 						</div>
 					</div>
 					<div className="row">
-						<div className="col-12 col-6 col-lg-6 col-md-6 col-xl4 col-xxl-6 mb-4">
+						<div className="col-12 col-6 col-lg-6 col-md-6 col-xl4 col-xxl-6 mb-3">
 							<RdsInput
 								label="Client Uri"
 								placeholder="Enter Url"
@@ -160,7 +160,7 @@ const RdsCompApplicationBasic = (props: RdsCompApplicationBasicProps) => {
 								dataTestId="client-url"
 							></RdsInput>
 						</div>
-						<div className="col-12 col-6 col-lg-6 col-md-6 col-xl4 col-xxl-6 mb-4">
+						<div className="col-12 col-6 col-lg-6 col-md-6 col-xl4 col-xxl-6 mb-3">
 							<RdsInput
 								label="Logo Uri"
 								placeholder="Enter Uri"
@@ -321,7 +321,7 @@ const RdsCompApplicationBasic = (props: RdsCompApplicationBasicProps) => {
 							label="cancel"
 							size="small"
 							isOutline={true}
-							colorVariant="primary"
+							colorVariant=""
 							databsdismiss="offcanvas"
 							databstoggle="offcanvas"
 							databstarget="#application"

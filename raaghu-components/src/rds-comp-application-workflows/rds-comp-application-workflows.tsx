@@ -58,7 +58,7 @@ const RdsCompApplicationWorkflows = (props: RdsCompApplicationWorkflowsProps) =>
    return (
       <>
          <div className="row">
-            <div className="col-12 col-6 col-lg-6 col-md-6 col-xl4 col-xxl-6 mb-0 mb-lg-3 mb-xl-3 mb-xxl-3">
+            <div className="col-12 col-lg-12 col-md-12 col-xl-12 col-xxl-12 mb-3 pt-3">
                <RdsCheckbox
                   classes="py-2"
                   label="Allow Authorization Code Flow"
@@ -87,10 +87,7 @@ const RdsCompApplicationWorkflows = (props: RdsCompApplicationWorkflowsProps) =>
                   checked={basicApplicationData.allowPasswordFlow}
                   dataTestId="password-flow"
                ></RdsCheckbox>
-               
-            </div>
-            <div className="col-12 col-lg-12 col-md-12 col-xl-12 col-xxl-12 mb-3">
-               <RdsCheckbox
+                <RdsCheckbox
                   classes="py-2"
                   label="Allow Refresh Token Flow"
                   onChange={e => { setRefresh(e.target.checked) }}
@@ -114,6 +111,7 @@ const RdsCompApplicationWorkflows = (props: RdsCompApplicationWorkflowsProps) =>
                   isDisabled={basicApplicationData.type === 'public'}
                   dataTestId="device-endpoint"
                ></RdsCheckbox>
+               
             </div>
          </div>
          {basicApplicationData.allowAuthorizationCodeFlow || basicApplicationData.allowImplicitFlow ||

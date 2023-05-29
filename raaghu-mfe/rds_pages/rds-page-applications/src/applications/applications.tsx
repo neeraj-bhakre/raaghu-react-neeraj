@@ -24,7 +24,7 @@ import { fetchApplications, deleteApplications, saveApplications, getScopes, get
 
 const Applications = () => {
   const dispatch = useAppDispatch();
-  const offCanvasHandler = () => {};
+  const offCanvasHandler = () => { };
   const application = useAppSelector((state) => state.persistedReducer.applications);
   const [applicationId, setApplicationId] = useState("");
   const [permissionKeyName, setPermissionKeyName] = useState("");
@@ -79,7 +79,6 @@ const Applications = () => {
   useEffect(() => {
     let tempScopes: any[] = [];
     if (application.scopes && application.scopes.length > 0) {
-      debugger
       application.scopes.map((e: any) => {
         const item = {
           id: e.id,
@@ -215,9 +214,6 @@ const Applications = () => {
     { id: "delete", displayName: "Delete", modalId: "application-delete-off" },
 
   ];
-  // const navtabsItems = [
-  //   { label: "Applications Information", tablink: "#nav-home", id: 0 },
-  // ];
   const navtabsItems = [
     { label: "Basics", tablink: "#nav-home", id: 0 },
     { label: "Workflows", tablink: "#nav-role", id: 1 },
@@ -230,13 +226,6 @@ const Applications = () => {
     { label: "Scopes", tablink: "#nav-org", id: 2 },
     { label: "Permissions", tablink: "#nav-profile", id: 3 }
   ];
-
-
-
-  // const navtabsEditItems = [
-  //   { label: "Applications Information", tablink: "#nav-home", id: 0 },
-  //   { label: "Permissions", tablink: "#nav-profile", id: 1 },
-  // ];
 
   const [applicationData, setApplicationData] = useState<any>([]);
   const [scopesListData, setScopesListData] = useState<any>([]);
@@ -402,13 +391,6 @@ const Applications = () => {
               </div>
             </RdsOffcanvas>
 
-
-
-
-
-
-
-
             <RdsOffcanvas
               canvasTitle="Edit Application"
               onclick={offCanvasHandler}
@@ -431,7 +413,7 @@ const Applications = () => {
                 justified={false}
               >
                 {activeNavTabEditId == 0 &&
-                   <RdsCompApplicationBasic handleSubmit={(editApplicationData: any) => { handleEditSubmit(editApplicationData) }} basicData={editApplicationData} typeList={typeList} scopesList={scopesListData} consentType={consentType} ></RdsCompApplicationBasic>
+                  <RdsCompApplicationBasic handleSubmit={(editApplicationData: any) => { handleEditSubmit(editApplicationData) }} basicData={editApplicationData} typeList={typeList} scopesList={scopesListData} consentType={consentType} ></RdsCompApplicationBasic>
                 }
 
                 {activeNavTabEditId == 1 && (
@@ -444,7 +426,7 @@ const Applications = () => {
 
                 {activeNavTabEditId == 2 && (
                   <>
-                   <RdsCompApplicationScopes scopesList={scopesListData}></RdsCompApplicationScopes>
+                    <RdsCompApplicationScopes scopesList={scopesListData}></RdsCompApplicationScopes>
                   </>
                 )}
 
@@ -508,9 +490,6 @@ const Applications = () => {
                 ></RdsButton>
               </div>
             </RdsOffcanvas>
-
-
-
 
           </div>
 
