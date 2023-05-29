@@ -186,18 +186,6 @@ const RdsCompApplicationBasic = (props: RdsCompApplicationBasicProps) => {
 							{errorType && <span className="text-danger">{errorType}</span>}
 						</div>
 						<div className="col-12 col-6 col-lg-6 col-md-6 col-xl4 col-xxl-6 mb-3">
-							<RdsLabel label="Scopes" class="pb-2" />
-							<RdsSelectList
-								label={"Ecoped"}
-								selectItems={props.scopesList}
-								selectedValue={basicApplicationData.scopes}
-								isMultiple={true}
-								someCallback={setScopesOption}
-								dataTestId="ecoped"
-							></RdsSelectList>
-						</div>
-					</div>
-					<div className="row ">
 						{basicApplicationData.type === 'confidential' && (
 							<RdsInput
 								label="Client Secrete"
@@ -210,7 +198,9 @@ const RdsCompApplicationBasic = (props: RdsCompApplicationBasicProps) => {
 							></RdsInput>
 						)}
 					</div>
-					<div className="row">
+					</div>
+					
+					{/* <div className="row">
 						<div className="col-12 col-6 col-lg-6 col-md-6 col-xl4 col-xxl-6 mb-0 mb-lg-3 mb-xl-3 mb-xxl-3">
 							<RdsCheckbox
 								classes="py-2"
@@ -323,7 +313,7 @@ const RdsCompApplicationBasic = (props: RdsCompApplicationBasicProps) => {
 								dataTestId="enabled"
 							></RdsCheckbox>
 						</div>
-					)}
+					)} */}
 					<div className="footer-buttons my-2 d-flex" >
 						<RdsButton
 							class="me-2"
