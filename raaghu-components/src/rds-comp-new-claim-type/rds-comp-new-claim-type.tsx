@@ -69,7 +69,7 @@ const RdsCompNewClaimType = (props: RdsCompNewClaimTypeProps) => {
             />
       </div>
       <div className="col-md-6 mb-3">	
-      <RdsLabel label="Value Type"/>
+      <RdsLabel label="Value Type" class="pb-2"/>
             <RdsSelectList
               label={"Value Type"}
               selectItems={props.valueType}
