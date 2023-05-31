@@ -55,7 +55,7 @@ const RdsSelectList = (props: RdsSelectProps) => {
   return (
     <Fragment>
       {" "}
-      <label>{props.label}</label>
+      <label className="mb-2">{props.label}</label>
       <select
         key={props.id}
         value={selectedOption}
